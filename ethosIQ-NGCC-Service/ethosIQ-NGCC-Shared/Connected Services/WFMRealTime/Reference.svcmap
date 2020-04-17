@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7ed917e3-d6d0-4168-900a-09c157701a71" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.154.108.71:6999/WFMRealTime?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WFMRealTime.xsd" MetadataType="Schema" ID="2873d974-efa3-4bab-9573-35f4161c9cd9" SourceId="1" SourceUrl="http://10.154.108.71:6999/WFMRealTime?xsd=xsd1" />
+    <MetadataFile FileName="IncomingWFMRTA.wsdl" MetadataType="Wsdl" ID="16fe013c-6166-429a-b10c-a1cfd50c8f72" SourceId="1" SourceUrl="http://10.154.108.71:6999/WFMRealTime?wsdl" />
+    <MetadataFile FileName="WFMRealTime1.xsd" MetadataType="Schema" ID="30e2fd66-97e4-4bb4-96fb-418e368560d2" SourceId="1" SourceUrl="http://10.154.108.71:6999/WFMRealTime?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
