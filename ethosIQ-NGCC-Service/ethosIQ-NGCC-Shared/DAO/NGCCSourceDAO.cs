@@ -35,6 +35,7 @@ namespace ethosIQ_NGCC_Shared.DAO
                         {
                             while (reader.Read())
                             {
+                                /*
                                 NGCCSources.Add(new NGCCSource(Convert.ToInt32(reader["NGCCSOURCEID"]), 
                                                                reader["NAME"].ToString(), 
                                                                reader["IPADDRESS"].ToString(),
@@ -44,6 +45,7 @@ namespace ethosIQ_NGCC_Shared.DAO
                                                                reader["PASSWORD"].ToString(),
                                                                Convert.ToBoolean(reader["REALTIMEENABLED"]),
                                                                reader["REALTIMEURL"].ToString()));
+                                                               */
                             }
                         }
                     }

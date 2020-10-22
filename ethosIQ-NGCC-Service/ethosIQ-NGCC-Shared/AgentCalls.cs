@@ -11,39 +11,39 @@ namespace ethosIQ_NGCC_Shared
     public class AgentActiveCall
     {
         [XmlAttribute(AttributeName = "id")]
-        public string Id { get; set; }
+        public string Id { get; set; }//
         [XmlAttribute(AttributeName = "tp")]
-        public string Tp { get; set; }
+        public string Tp { get; set; }//
         [XmlAttribute(AttributeName = "tl")]
-        public string Tl { get; set; }
+        public string Tl { get; set; }//
         [XmlAttribute(AttributeName = "as")]
-        public string As { get; set; }
+        public string As { get; set; }//
         [XmlAttribute(AttributeName = "cc")]
-        public string Cc { get; set; }
+        public string Cc { get; set; }//
         [XmlAttribute(AttributeName = "all")]
-        public string All { get; set; }
+        public string All { get; set; }//
         [XmlAttribute(AttributeName = "aics")]
-        public string Aics { get; set; }
+        public string Aics { get; set; }//
         [XmlAttribute(AttributeName = "cid")]
-        public string Cid { get; set; }
+        public string Cid { get; set; }//
         [XmlAttribute(AttributeName = "gid")]
-        public string Gid { get; set; }
+        public string Gid { get; set; }//
         [XmlAttribute(AttributeName = "rc")]
         public string Rc { get; set; }
         [XmlAttribute(AttributeName = "dir")]
         public string Dir { get; set; }
         [XmlAttribute(AttributeName = "cct")]
-        public string Cct { get; set; }
+        public string Cct { get; set; }//
         [XmlAttribute(AttributeName = "cq")]
-        public string Cq { get; set; }
+        public string Cq { get; set; }//
         [XmlAttribute(AttributeName = "inatt")]
-        public string Inatt { get; set; }
+        public string Inatt { get; set; }//
         [XmlAttribute(AttributeName = "outatt")]
-        public string Outatt { get; set; }
+        public string Outatt { get; set; }//
         [XmlAttribute(AttributeName = "a2aatt")]
-        public string A2aatt { get; set; }
+        public string A2aatt { get; set; }//
         [XmlAttribute(AttributeName = "tatt")]
-        public string Tatt { get; set; }
+        public string Tatt { get; set; }//
     }
 
     [XmlRoot(ElementName = "ACalls")]
@@ -58,7 +58,7 @@ namespace ethosIQ_NGCC_Shared
         [XmlAttribute(AttributeName = "al")]
         public string AgentLimitation { get; set; }
         [XmlAttribute(AttributeName = "cts")]
-        public string LastConfigurationUpdateTimeStamp { get; set; }
+        public string LastConfigurationUpdateTimeStamp { get; set; }//-----------
 
     }
 }

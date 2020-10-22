@@ -16,5 +16,17 @@ namespace ethosIQ_NGCC_Shared
             this.PrimaryID = PrimaryID;
             this.SecondaryID = SecondaryID;
         }
+
+        public string GetID()
+        {
+            if(SecondaryID != null)
+            {
+                return SecondaryID;
+            }
+            else
+            {
+                return PrimaryID;
+            }
+        }
     }
 }

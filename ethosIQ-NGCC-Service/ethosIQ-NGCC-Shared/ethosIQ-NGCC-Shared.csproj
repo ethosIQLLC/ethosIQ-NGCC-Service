@@ -37,7 +37,11 @@
     <Reference Include="ethosIQ-Database">
       <HintPath>..\..\..\ethosIQ-Utilities\ethosIQ-Utilities\ethosIQ-Database\bin\Debug\ethosIQ-Database.dll</HintPath>
     </Reference>
+    <Reference Include="ethosIQ-RTA">
+      <HintPath>..\..\..\ethosIQ-Interfaces\ethosIQ-Interfaces\ethosIQ-WFM-RTA\bin\Debug\ethosIQ-RTA.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -50,10 +54,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgentState.cs" />
+    <Compile Include="Configuration\CollectionDatabaseConfiguration.cs" />
+    <Compile Include="Configuration\NGCCCollection.cs" />
+    <Compile Include="Configuration\NGCCConfiguration.cs" />
+    <Compile Include="Configuration\NGCCConfigurationSection.cs" />
+    <Compile Include="Configuration\NGCCElement.cs" />
+    <Compile Include="DAO\TranslationDAO.cs" />
     <Compile Include="Translation.cs" />
     <Compile Include="AgentCalls.cs" />
     <Compile Include="AgentConfig.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Connected Services\WFMRealTime\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -92,5 +101,6 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

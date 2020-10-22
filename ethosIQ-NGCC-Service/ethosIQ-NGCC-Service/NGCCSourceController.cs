@@ -1,6 +1,7 @@
 ﻿using ethosIQ_Configuration;
 using ethosIQ_Database;
 using ethosIQ_NGCC_Shared;
+using ethosIQ_NGCC_Shared.Configuration;
 using ethosIQ_NGCC_Shared.DAO;
 using System;
 using System.Collections.Generic;
@@ -123,7 +124,7 @@ namespace ethosIQ_NGCC_Service
 
         public override bool GetSources()
         {
-
+            /*
             if (ConfigurationDatabase != null)
             {
                 Sources = new List<ethosIQSource>();
@@ -136,6 +137,18 @@ namespace ethosIQ_NGCC_Service
                 }
                 
                 return true;
+            }
+            */
+
+            try
+            {
+                Sources = NGCCConfiguration.GetConfiguration();
+                return true;
+            }
+            catch(Exception e)
+            {
+               Console.WriteLine("Failed to get NGCC sources. Please check config file for correct syntax. " + e.Message);
+               EventLog.WriteEntry("Failed to get NGCC sources. Please check config file for correct syntax. " + e.Message, EventLogEntryType.Error);
             }
 
             return false;
